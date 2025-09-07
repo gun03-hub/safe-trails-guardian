@@ -68,7 +68,7 @@ const Map = ({ height = 'h-96', showControls = true, center = [77.2090, 28.6139]
     return (
       <div
   className={`${height} flex items-center justify-center rounded-lg border bg-cover bg-center relative overflow-hidden`}
-  style={{ backgroundImage: "url('/public/map.jpg')" }}
+  style={{ backgroundImage: "url('/map.jpg')" }}
 >
   {/* Optional overlay to make text readable */}
   <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>

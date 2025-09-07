@@ -114,7 +114,7 @@ export default function AdminDashboard() {
             <CardContent>
               <div
   className="aspect-square rounded-lg flex items-center justify-center mb-4 bg-cover bg-center "
-  style={{ backgroundImage: "url('/public/map.jpg')"}}
+  style={{ backgroundImage: "url('/map.jpg')"}}
 >
   <div className="text-center bg-black/90 p-4 rounded-lg">
     <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
