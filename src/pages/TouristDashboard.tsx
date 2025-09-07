@@ -86,10 +86,11 @@ export default function TouristDashboard() {
             <CardContent>
               {/* Panic Button */}
               <div className="text-center mb-6">
-                <Button 
-                  size="lg" 
-                  className="w-32 h-32 rounded-full bg-destructive hover:bg-destructive/90 text-white shadow-elevated animate-pulse-glow"
-                >
+                 <Button 
+                   size="lg" 
+                   className="w-32 h-32 rounded-full bg-destructive hover:bg-destructive/90 text-white shadow-elevated animate-pulse-glow"
+                   onClick={() => alert('🚨 EMERGENCY ALERT SENT!\n\nAuthorities have been notified.\nHelp is on the way!')}
+                 >
                   <div className="text-center">
                     <AlertTriangle className="w-8 h-8 mx-auto mb-2" />
                     <span className="text-sm font-bold">PANIC</span>
@@ -139,9 +140,9 @@ export default function TouristDashboard() {
                   </div>
                 ))}
               </div>
-              <Button variant="outline" className="w-full mt-4">
-                View All Tips
-              </Button>
+               <Button variant="outline" className="w-full mt-4" asChild>
+                 <a href="/tourist/safety">View All Tips</a>
+               </Button>
             </CardContent>
           </Card>
 

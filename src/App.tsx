@@ -7,6 +7,12 @@ import Landing from "./pages/Landing";
 import { Layout } from "./components/Layout";
 import AdminDashboard from "./pages/AdminDashboard";
 import TouristDashboard from "./pages/TouristDashboard";
+import TouristMap from "./pages/TouristMap";
+import AlertsManagement from "./pages/AlertsManagement";
+import Reports from "./pages/Reports";
+import DigitalID from "./pages/DigitalID";
+import SafetyTips from "./pages/SafetyTips";
+import TouristAlerts from "./pages/TouristAlerts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,15 +27,15 @@ const App = () => (
           <Route path="/" element={<Landing />} />
           <Route path="/admin" element={<Layout />}>
             <Route index element={<AdminDashboard />} />
-            <Route path="map" element={<div className="p-6">Map View - Coming Soon</div>} />
-            <Route path="alerts" element={<div className="p-6">Alerts Management - Coming Soon</div>} />
-            <Route path="reports" element={<div className="p-6">Reports - Coming Soon</div>} />
+            <Route path="map" element={<TouristMap />} />
+            <Route path="alerts" element={<AlertsManagement />} />
+            <Route path="reports" element={<Reports />} />
           </Route>
           <Route path="/tourist" element={<Layout />}>
             <Route index element={<TouristDashboard />} />
-            <Route path="id" element={<div className="p-6">Digital ID - Coming Soon</div>} />
-            <Route path="safety" element={<div className="p-6">Safety Tips - Coming Soon</div>} />
-            <Route path="alerts" element={<div className="p-6">Tourist Alerts - Coming Soon</div>} />
+            <Route path="id" element={<DigitalID />} />
+            <Route path="safety" element={<SafetyTips />} />
+            <Route path="alerts" element={<TouristAlerts />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

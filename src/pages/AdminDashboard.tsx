@@ -119,9 +119,9 @@ export default function AdminDashboard() {
                   <p className="text-xs text-muted-foreground">Real-time tracking</p>
                 </div>
               </div>
-              <Button className="w-full" variant="outline">
-                View Full Map
-              </Button>
+               <Button className="w-full" variant="outline" asChild>
+                 <a href="/admin/map">View Full Map</a>
+               </Button>
             </CardContent>
           </Card>
         </div>
@@ -133,22 +133,30 @@ export default function AdminDashboard() {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <Button variant="outline" className="h-20 flex-col">
-                <Users className="w-6 h-6 mb-2" />
-                <span>Manage Tourists</span>
-              </Button>
-              <Button variant="outline" className="h-20 flex-col">
-                <MapPin className="w-6 h-6 mb-2" />
-                <span>View Map</span>
-              </Button>
-              <Button variant="outline" className="h-20 flex-col">
-                <AlertTriangle className="w-6 h-6 mb-2" />
-                <span>Alert Center</span>
-              </Button>
-              <Button variant="outline" className="h-20 flex-col">
-                <TrendingUp className="w-6 h-6 mb-2" />
-                <span>Reports</span>
-              </Button>
+               <Button variant="outline" className="h-20 flex-col" asChild>
+                 <a href="/admin/map">
+                   <Users className="w-6 h-6 mb-2" />
+                   <span>Manage Tourists</span>
+                 </a>
+               </Button>
+               <Button variant="outline" className="h-20 flex-col" asChild>
+                 <a href="/admin/map">
+                   <MapPin className="w-6 h-6 mb-2" />
+                   <span>View Map</span>
+                 </a>
+               </Button>
+               <Button variant="outline" className="h-20 flex-col" asChild>
+                 <a href="/admin/alerts">
+                   <AlertTriangle className="w-6 h-6 mb-2" />
+                   <span>Alert Center</span>
+                 </a>
+               </Button>
+               <Button variant="outline" className="h-20 flex-col" asChild>
+                 <a href="/admin/reports">
+                   <TrendingUp className="w-6 h-6 mb-2" />
+                   <span>Reports</span>
+                 </a>
+               </Button>
             </div>
           </CardContent>
         </Card>
