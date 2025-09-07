@@ -112,13 +112,17 @@ export default function AdminDashboard() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="aspect-square bg-gradient-secondary rounded-lg flex items-center justify-center mb-4">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
-                  <p className="text-sm font-medium text-primary">Interactive Map</p>
-                  <p className="text-xs text-muted-foreground">Real-time tracking</p>
-                </div>
-              </div>
+              <div
+  className="aspect-square rounded-lg flex items-center justify-center mb-4 bg-cover bg-center "
+  style={{ backgroundImage: "url('/public/map.jpg')"}}
+>
+  <div className="text-center bg-black/90 p-4 rounded-lg">
+    <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
+    <p className="text-sm font-medium text-primary">Interactive Map</p>
+    <p className="text-xs text-muted-foreground">Real-time tracking</p>
+  </div>
+</div>
+
                <Button className="w-full" variant="outline" asChild>
                  <a href="/admin/map">View Full Map</a>
                </Button>

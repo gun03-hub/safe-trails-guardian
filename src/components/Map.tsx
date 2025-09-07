@@ -66,27 +66,42 @@ const Map = ({ height = 'h-96', showControls = true, center = [77.2090, 28.6139]
 
   if (!isTokenSet) {
     return (
-      <div className={`${height} flex items-center justify-center bg-muted rounded-lg border`}>
-        <div className="text-center p-6 space-y-4">
-          <h3 className="text-lg font-semibold">Setup Mapbox</h3>
-          <p className="text-muted-foreground text-sm">Enter your Mapbox public token to view the map</p>
-          <div className="flex gap-2 max-w-md">
-            <Input
-              placeholder="pk.eyJ1IjoieW91ci11c2VybmFtZSIsImEiOiJjbGV..."
-              value={mapboxToken}
-              onChange={(e) => setMapboxToken(e.target.value)}
-              className="flex-1"
-            />
-            <Button onClick={handleTokenSubmit}>Load Map</Button>
-          </div>
-          <p className="text-xs text-muted-foreground">
-            Get your token from{' '}
-            <a href="https://mapbox.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              mapbox.com
-            </a>
-          </p>
-        </div>
-      </div>
+      <div
+  className={`${height} flex items-center justify-center rounded-lg border bg-cover bg-center relative overflow-hidden`}
+  style={{ backgroundImage: "url('/public/map.jpg')" }}
+>
+  {/* Optional overlay to make text readable */}
+  <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
+  {/* Content */}
+  <div className="relative text-center p-6 space-y-4">
+    <h3 className="text-lg font-semibold text-white">Setup Mapbox</h3>
+    <p className="text-muted-foreground text-sm text-white/80">
+      Enter your Mapbox public token to view the map
+    </p>
+    <div className="flex gap-2 max-w-md">
+      <Input
+        placeholder="pk.eyJ1IjoieW91ci11c2VybmFtZSIsImEiOiJjbGV..."
+        value={mapboxToken}
+        onChange={(e) => setMapboxToken(e.target.value)}
+        className="flex-1"
+      />
+      <Button onClick={handleTokenSubmit}>Load Map</Button>
+    </div>
+    <p className="text-xs text-muted-foreground text-white/70">
+      Get your token from{' '}
+      <a
+        href="https://mapbox.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        mapbox.com
+      </a>
+    </p>
+  </div>
+</div>
+
     );
   }
 
