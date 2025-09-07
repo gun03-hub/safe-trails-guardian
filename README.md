@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# 🌍 SafeTrails  
 
-## Project info
+**Smart safety monitoring and instant response for every tourist.**  
 
-**URL**: https://lovable.dev/projects/a2e1fc15-747a-4532-8004-67b2db518bb9
+SafeTrails is a **tourist safety platform** built with **AI, real-time tracking, panic alerts, and blockchain-secured digital IDs**, ensuring visitors across the world feel secure while exploring.  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features  
+- 📍 **Real-time Tracking** – GPS + geofencing to alert when tourists enter unsafe zones  
+- 🚨 **Panic Alerts** – One-tap SOS button with instant notification to authorities and contacts  
+- 🛡 **AI Monitoring** – Detects unusual activity patterns for proactive safety measures  
+- ⚡ **Instant Response** – Automated reporting and coordination with local authorities  
+- 🔐 **Blockchain-secured IDs** – Verifiable tourist credentials across borders  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a2e1fc15-747a-4532-8004-67b2db518bb9) and start prompting.
+## 🖼 Project Demo  
+🔗 [Live Website](https://safetrails.netlify.app/)  
 
-Changes made via Lovable will be committed automatically to this repo.
+![Hero Section](public/hero.jpg)  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack  
+- **Frontend**: React + TailwindCSS + ShadCN UI  
+- **Backend**: Node.js + Express  
+- **Database**: MongoDB / PostgreSQL  
+- **AI/ML**: Anomaly detection (future extension)  
+- **Other**: Blockchain for secure IDs, Netlify for deployment  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🧩 How It Works  
+1. **Tourists** register and receive a blockchain-based digital ID.  
+2. **System monitors** their live location (with consent) and sets safe geo-boundaries.  
+3. If a tourist **presses SOS** or enters a danger zone, instant alerts are sent.  
+4. **Authorities/Admins** see incidents on a real-time dashboard.  
+5. **AI anomaly detection** provides proactive safety signals.  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📸 Screenshots  
+- Hero Landing Page  
+- Features Overview  
+- Dashboard Preview  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 🏗️ Project Structure  
 ```
 
-**Edit a file directly in GitHub**
+SafeTrails/
+│── public/          # Static files (hero.jpg, dashboard.jpg, etc.)
+│── src/
+│   ├── components/  # Reusable UI components
+│   ├── pages/       # Landing, Admin, Tourist
+│   ├── App.jsx      # Main app file
+│── package.json     # Dependencies
+│── README.md        # Project docs
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🧑‍💻 Team  
+- **Gunjan Arora** – Fullstack + Project Lead  
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## ⚡ Challenges We Faced  
+- Integrating blockchain IDs with web auth  
+- Designing a user-friendly yet admin-ready dashboard  
+- Balancing AI monitoring with user privacy  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📌 Future Improvements  
+- Multi-language support  
+- Tourist community support & chat  
+- AI-based route safety recommendations  
+- Integration with government alert systems  
 
-Simply open [Lovable](https://lovable.dev/projects/a2e1fc15-747a-4532-8004-67b2db518bb9) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🏆 HackOdisha 5.0 Submission  
+This project was built as part of **HackOdisha 5.0**, one of Eastern India’s largest hackathons organized by Webwiz, NIT Rourkela.  
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+✨ *SafeTrails: Keeping tourists safe, anywhere and everywhere.*  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Want me to also make you a **short hackathon-optimized README (under 1 page)** that judges can skim quickly?
