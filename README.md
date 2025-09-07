@@ -89,5 +89,3 @@ This project was built as part of **HackOdisha 5.0**, one of Eastern India’s l
 ---
 
 ✨ *SafeTrails: Keeping tourists safe, anywhere and everywhere.*  
-
-Want me to also make you a **short hackathon-optimized README (under 1 page)** that judges can skim quickly?
